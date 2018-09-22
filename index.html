@@ -17,6 +17,10 @@
 		html{
 			-webkit-text-size-adjust: none;
 		}
+		a{
+			color: black;
+			text-decoration: none;
+		}
 		body{
 			background:#22C6B0;
 			
@@ -24,24 +28,23 @@
 		}
 		
 		#container{
-			width: calc(100vw);
+			width: calc(100vw - 10px);
 			height: 500vh;
 			/*margin: 20px;*/
-			margin-top: 0px;
-			
+			margin: 0px 5px 5px 5px;
+			padding: 15px 0px 0px 0px;
 			text-indent: 5px;
 			
 			background: white;
 			position: relative;
 			
-			box-shadow: 0px 0px .125em .25em #199282;
 			z-index: 5;
 		}
 		
 		@media only screen
 		and (max-width : 1024px) {
 			#container img{
-			width: calc(100vw - 8px);
+			width: calc(100% - 8px);
 			margin: 0% 4px;
 			
 			background: url("base.PNG") no-repeat fixed;
@@ -53,7 +56,7 @@
 		@media only screen
 		and (min-width : 1025px) {  
 			#container img{
-			width: calc(60vw - 8px);
+			width: calc(60% - 8px);
 			margin: 0% calc(20vw + 4px);
 			
 			background: url("base.PNG") no-repeat fixed;
@@ -64,7 +67,7 @@
 		
 		#title{
 			width: 100%;
-			height: 20vh;
+			height: 40vh;
 			line-height: 20vh;
 			background: url("base.PNG") no-repeat fixed;
 			background-size: cover;
@@ -74,14 +77,24 @@
 			font-weight: bold;
 			color: white;
 			
-			box-shadow: 0px 0px .125em .25em #00000011;
+			
 			
 			z-index: 10;
 		}
 		
 		.text{
-			margin: 20PX 0PX;
+			text-align: center;
+			margin: 0px 0px 20px 0px;
+			line-height: normal;
 		}
+		.bold5{ font-weight: 500; }
+		.bold7{ font-weight: 700; }
+		.bold9{ font-weight: 900; }
+		.size12{ font-size: 120%; }
+		.deco{ text-decoration:underline; }
+		.gray{ color: #777; }
+		.red{ color: #BD484A; }
+		
 	</style>
 	<title>Slack for GM</title>
 </head>
@@ -90,8 +103,18 @@
 	<div id="title">SLACK 사용법 ver. 2019</div>
 	<div id="container">
 		
-		<div class="text"> 먼저 가입을 위해 링크를 들어가주세요 </div>
-		<img src="base.PNG">
+		<div class="text bold5 gray">
+			팀빌딩식에서 공지를 드렸던 것과 같이<br>
+			앞으로 1년간, 졸업프로젝트 전체 과정에서 Slack(슬랙)을 이용합니다</div>
+		<div class="text bold7 size12"> 슬랙을 사용함으로 얻을 수 있는 장점은 다음과 같습니다<br></div>
+		<div class="text bold7 deco red">
+		1.슬랙을 사용함으로 얻을 수 있는 장점은 다음과 같습니다<br>
+		2.슬랙을 사용함으로 얻을 수 있는 장점은 다음과 같습니다<br>
+		3.슬랙을 사용함으로 얻을 수 있는 장점은 다음과 같습니다<br>
+		</div>
+	
+		<div class="text"> <a href="http://bit.ly/gmSlack">http://bit.ly/gmSlack</a></div>
+		<img src="slack01.PNG">
 	</div>
 </body>
 </html>
