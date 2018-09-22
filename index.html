@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no">
 	<link rel="stylesheet" href="main.css" />
 	<style>
 		@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -13,6 +13,9 @@
 		div{
 			
 			font-family: 'Noto Sans KR', sans-serif;
+		}
+		html{
+			-webkit-text-size-adjust: none;
 		}
 		body{
 			background:#22C6B0;
@@ -36,7 +39,6 @@
 		}
 		
 		@media only screen
-		and (min-width : 768px)  
 		and (max-width : 1024px) {
 			#container img{
 			width: calc(100vw - 8px);
@@ -77,6 +79,9 @@
 			z-index: 10;
 		}
 		
+		.text{
+			margin: 20PX 0PX;
+		}
 	</style>
 	<title>Slack for GM</title>
 </head>
@@ -84,7 +89,8 @@
 <body>
 	<div id="title">SLACK 사용법 ver. 2019</div>
 	<div id="container">
-		2019년도 큐레이터입니다
+		
+		<div class="text"> 먼저 가입을 위해 링크를 들어가주세요 </div>
 		<img src="base.PNG">
 	</div>
 </body>
