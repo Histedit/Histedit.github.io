@@ -21,12 +21,12 @@
 		}
 		
 		#container{
-			width: calc(100vw - 60px);
+			width: calc(100vw);
 			height: 500vh;
-			margin: 20px;
+			/*margin: 20px;*/
 			margin-top: 0px;
 			
-			padding: 10px;
+			text-indent: 5px;
 			
 			background: white;
 			position: relative;
@@ -35,13 +35,30 @@
 			z-index: 5;
 		}
 		
-		#container img{
+		@media only screen
+		and (min-width : 768px)  
+		and (max-width : 1024px) {
+			#container img{
 			width: calc(100% - 8px);
 			margin: 0% 4px;
 			
 			background: url("base.PNG") no-repeat fixed;
 			background-size: cover;
+			}
 		}
+		
+		
+		@media only screen
+		and (min-width : 1025px) {  
+			#container img{
+			width: calc(60% - 8px);
+			margin: 0% calc(20% + 4px);
+			
+			background: url("base.PNG") no-repeat fixed;
+			background-size: cover;
+			}
+		}
+		
 		
 		#title{
 			width: 100%;
