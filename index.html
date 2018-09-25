@@ -3,6 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="main.css" />
 	<style>
 		@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -29,7 +46,7 @@
 		
 		#container{
 			width: calc(100vw - 50px);
-			height: 500vh;
+			height: 700vh;
 			/*margin: 20px;*/
 			margin: 0px 5px 5px 5px;
 			padding: 15px 20px 0px 20px;
@@ -56,9 +73,10 @@
 		@media only screen
 		and (min-width : 1025px) {  
 			#container img{
-			width: calc(60% - 8px);
-			margin: 0% calc(20vw + 4px);
-			
+			max-width: calc(50% - 8px);
+		  	display: block;
+    		margin-left: auto;
+    		margin-right: auto;
 			background: url("base.PNG") no-repeat fixed;
 			background-size: cover;
 			}
@@ -86,7 +104,7 @@
 		
 		.text{
 			text-align: center;
-			margin: 0px 0px 20px 0px;
+			margin: 20px 0px 40px 0px;
 			line-height: normal;
 		}
 		.bold5{ font-weight: 500; }
@@ -111,14 +129,26 @@
 		
 		<div class="text bold5 gray">
 			팀빌딩식에서 공지를 드렸던 것과 같이<br>
-			앞으로 1년간, 졸업프로젝트 전체 과정에서 Slack(슬랙)을 이용합니다</div>
+			앞으로 1년간, 졸업프로젝트 전체 과정에서 "Slack(슬랙)"을 이용합니다</div>
+		<img src="slack___.PNG" alt="slack manual 01" style="border:4px solid #22C6B0">
+
 		<div class="text bold7 size12"> 슬랙을 사용함으로 얻을 수 있는 장점은 다음과 같습니다<br></div>
 		<div class="text bold7 deco green">
-		1.다른 서비스와 분리된 독립적인 환경 =&gt;<br> 네이버 카페, 카카오톡등은 다른 알림이 존재하는 반면,<br>
-완전히 독립된 SNS라 필요한 알림만 받을 수 있습니다 <br><br>
+		1.다른 서비스와 분리된 독립적인 환경 =&gt;<br> 네이버 카페, 카카오톡등은 다른 알림에 방해받을 여지가 존재하는 반면,<br>
+완전히 독립된 서비스라서 필요한 알림만 받을 수 있습니다 <br><br>
 		2.실시간으로 연락가능한 카카오톡의 이점과<br>각 게시판별로 따로 이야기할 수 있는 카페류 페이지의 이점을 모두 가지고있습니다<br><br>
 		</div>
-		<div class="text bold7 deco size16 mint"><a href="http://bit.ly/gmSlack" target="blank">http://bit.ly/gmSlack</a></div>
+		
+		<div class="text bold5 size12 red">현재는 팀빌딩에 도움이 될 하나의 서비스에 불과하지만<br>
+		팀빌딩이 완료된 시점부터는 담당 큐레이터의 관리와<br>
+		더불어 전체 프로젝트 관리를 진행할 서비스이오니,<br>
+		앞으로도 지속적인 관심과 참여를 부탁드립니다</div>
+		
+		<div class="text"> 따라서, 졸업프로젝트 대상자 여러분들은<br>
+		아래 링크로 가입부탁드립니다</div>
+
+		
+		<div class="text bold7 deco size16 mint">가입링크<br><a href="http://bit.ly/gmSlack" target="blank">http://bit.ly/gmSlack</a><br><br></div>
 
 		<img src="slack01.PNG" alt="slack manual 01" style="border:4px solid #22C6B0">
 		
@@ -130,16 +160,34 @@
 		
 		<img src="slack03.png" alt="slack manual 03" style="border:4px solid #22C6B0">
 		
-		<div class="text"> 인증메일은 위와 같이 옵니다 </div>
-		<div class="text"> 텍스트 1 </div>
-		<div class="text"> 텍스트 1 </div>
-		<div class="text"> 텍스트 1 </div>
-		<div class="text"> 텍스트 1 </div>
-		<div class="text"> 텍스트 1 </div>
-		<div class="text"> 텍스트 1 </div>
-		<div class="text"> 텍스트 1 </div>
-		<div class="text"> 텍스트 1 </div>
-		<div class="text"> 텍스트 1 </div>
+		<div class="text"> ▲ 인증메일은 위와 같이 옵니다 </div>
+		
+		<img src="slack04.png" alt="slack manual 04" style="border:4px solid #22C6B0">
+		
+		<div class="text"> 인증을 진행하면 위와 같은 이름과 닉네임을 설정할 수 있는 칸이 나옵니다<br>
+		<div class="bold7">Full name에는 실제 이름을, Display name에는 닉네임을 적을 겁니다<br></div>
+		닉네임 형식은 [팀이름] 이름을 적고,<br>
+		팀이 아직 없으신분들은 [개인] 이름을 적어주세요
+		</div>
+		<div class="text"> EULA 동의를 거치고나면 슬랙 채팅화면이 나오게됩니다<br>
+		슬랙봇이 알려주는 팁을 따라가도 좋고, 스킵해도 좋습니다</div>
+		
+		<img src="slack05.png" alt="slack manual 05" style="border:4px solid #22C6B0">
+		
+		<div class="text"> ▲ 브라우저에서도, 데스크탑 어플에서도, 앱에서도 비슷한 화면입니다 </div>
+		
+		<img src="slack_chat.PNG" alt="slack manual chat" style="border:4px solid #22C6B0">
+		
+		<div class="text"> <div class="bold7">공지사항 | 사람을_찾습니다 | 자유롭게_질문 | 팀_구합니다 </div> <br><br>
+		다소 직설적으로 게시판 제목을 만들어 두었으니,<br>
+		구분에는 무리가 없을 것으로 보입니다!!!</div>
+				
+		<img src="slack06.PNG" alt="slack manual 6" style="border:4px solid #22C6B0">
+		
+		<div class="text"> 슬랙에는 여러 개의 채팅방을 만들 수 있는 것과 별개로<br>
+		메시지를 보낸 사람을 클릭해서 다이렉트 메시지를 보낼 수 있습니다<br>
+		직접 컨택하실 때 슬랙을 이용해서 먼저 컨택하시면 됩니다</div>
+		<div class="text bold9 gray">기타 사항들은 슬랙에 가입하셔서<br>문의해주시면 바로바로 답변 드리겠습니다! </div>
 	</div>
 </body>
 </html>
